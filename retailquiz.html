@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Retail Store Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="radiostyle.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="submit.php">RESTAURANT FORM</a></li>
+        <li><a href="banksubmit.php">BANK FORM</a></li>
+        <li class="active"><a href="#">RETAIL STORE FORM</a></li>
+        <!-- <li><a href="index.php">HOME</a></li> -->
+        <!-- <li><a href="welcome.html">WELCOME</a></li> -->
+        <!-- <li><a href="banksubmit.php">RESTAURANT FORM</a></li> -->
+        <li><a href="index.php?logout='1'">LOGOUT</a></li>
+        <!-- <li><a href="submit.php">RESTAURANT QUIZ</a></li> -->
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#"></a></p>
+      <p><a href="#"></a></p>
+      <p><a href="#"></a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+      <div class="heading">
+      <h2><label>RETAIL STORE FEEDBACK</label></h2>
+      </div>
+      Dear Customer, we would like to thank you for visiting our retail store and would like to appreciate you
+      for taking your time to fill in this feedback form.
+      Please fill in all the questions by choosing the appropriate box.
+      The ratings are as follows:<br>
+      (1-Very Poor 2-Poor 3-Average 4-Good 5-Excellent)<br><br>
+      <div class="form">
+        <form method="post" action="retailsubmit.php" id="retailform">
+        <fieldset>
+        <legend style="text-align: center">Feedback Form:</legend>
+          <h2><label>STAFF</label></h2>
+          Staff Courtesy<br>
+          <input type="radio" name="staffcourtesy" value="1" required> 1
+          <input type="radio" name="staffcourtesy" value="2" required> 2
+          <input type="radio" name="staffcourtesy" value="3" required> 3
+          <input type="radio" name="staffcourtesy" value="4" required> 4
+          <input type="radio" name="staffcourtesy" value="5" required> 5<br>
+          Speed of Service<br>
+          <input type="radio" name="staffspeed" value="1" required> 1
+          <input type="radio" name="staffspeed" value="2" required> 2
+          <input type="radio" name="staffspeed" value="3" required> 3
+          <input type="radio" name="staffspeed" value="4" required> 4
+          <input type="radio" name="staffspeed" value="5" required> 5<br>
+          Staff Knowledge<br>
+          <input type="radio" name="staffknowledge" value="1" required> 1
+          <input type="radio" name="staffknowledge" value="2" required> 2
+          <input type="radio" name="staffknowledge" value="3" required> 3
+          <input type="radio" name="staffknowledge" value="4" required> 4
+          <input type="radio" name="staffknowledge" value="5" required> 5<br>
+          <h2><label>PRODUCT</label></h2>
+          Product Quality<br>
+          <input type="radio" name="quality" value="1" required> 1
+          <input type="radio" name="quality" value="2" required> 2
+          <input type="radio" name="quality" value="3" required> 3
+          <input type="radio" name="quality" value="4" required> 4
+          <input type="radio" name="quality" value="5" required> 5<br>
+          Value for Money<br>
+          <input type="radio" name="value" value="1" required> 1
+          <input type="radio" name="value" value="2" required> 2
+          <input type="radio" name="value" value="3" required> 3
+          <input type="radio" name="value" value="4" required> 4
+          <input type="radio" name="value" value="5" required> 5<br>
+          Variety<br>
+          <input type="radio" name="variety" value="1" required> 1
+          <input type="radio" name="variety" value="2" required> 2
+          <input type="radio" name="variety" value="3" required> 3
+          <input type="radio" name="variety" value="4" required> 4
+          <input type="radio" name="variety" value="5" required> 5<br><br>
+          <h2><label>VENUE</label></h2>
+          Location<br>
+          <input type="radio" name="location" value="1" required> 1
+          <input type="radio" name="location" value="2" required> 2
+          <input type="radio" name="location" value="3" required> 3
+          <input type="radio" name="location" value="4" required> 4
+          <input type="radio" name="location" value="5" required> 5<br>
+          Item Organization<br>
+          <input type="radio" name="organization" value="1" required> 1
+          <input type="radio" name="organization" value="2" required> 2
+          <input type="radio" name="organization" value="3" required> 3
+          <input type="radio" name="organization" value="4" required> 4
+          <input type="radio" name="organization" value="5" required> 5<br>
+          Accessibility<br>
+          <input type="radio" name="accessibility" value="1" required> 1
+          <input type="radio" name="accessibility" value="2" required> 2
+          <input type="radio" name="accessibility" value="3" required> 3
+          <input type="radio" name="accessibility" value="4" required> 4
+          <input type="radio" name="accessibility" value="5" required> 5<br><br>
+          <b>Description Box (Optional)</b><br>
+          <textarea style="border-radius: 4px" name = "description" form = "retailform" rows="8" cols="80">Enter text here...</textarea>
+        </fieldset>
+        <input type="submit" class = "button" name="retailsubmit">
+        <input type="reset" class = "button" name="reset1">
+        </form>
+    </div>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <p></p>
+
+        <p></p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Copyright &copy; 2019, Anthony Mwangi.</p>
+</footer>
+
+</body>
+</html>
